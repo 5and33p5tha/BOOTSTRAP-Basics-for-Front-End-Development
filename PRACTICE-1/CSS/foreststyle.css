@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+    margin: 0% !important;
+    padding: 0% !important;
+}
+
+
+.content-title-A{
+    padding-top: 7.5vh !important;
+    /* padding-top: 10px !important; */
+    text-align: center !important;
+    font-size: 1.5em !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    color: #a3c962 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+
+.content-title-B{
+    font-size: 1.5em !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    color: #a3c962 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    left: 0 !important;
+}
+
+
+.content-body-banner{
+    padding-top: 0.6vh !important;
+    text-align: center !important;
+    font-size: 1.35em !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+
+.heading-container{
+    width: 100vw !important;                 
+    /* Can Also Be Written As 100% or 100vmax or vmin depending on browser */
+    /* height: auto !important; */
+    /*Not Necessary TO Define Height As Height WIll DEPEND ON CONTENT SIZE*/
+    /* height: 85vh !important; */
+    /* Can Also define as height: 85vmin; */
+    background-image: url(https://wallpaperbat.com/img/29756-deep-green-forest-hd-wallpaper.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+
+.left-nav{
+    line-height: 0.85em !important;
+    font-size: 2em !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    margin-top: 3.5vh !important;
+    margin-left: 4.5vw !important;
+}
+
+
+.right-nav{
+    position: absolute !important;
+    right: 0 !important;
+    margin-top: 3.5vh !important;
+}
+
+
+.right-nav-contents{
+    line-height: 1.15em !important;
+    font-size: 1em !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    padding-left: 2.7vw !important;
+}
+
+
+.right-nav-contents:hover{
+    color: #a3c962 !important;
+}
+
+
+.heading-banner{
+    margin-top: 19vh !important;
+    text-align: center !important;
+    line-height: 1.25em !important;
+    font-size: 2em !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+
+.heading-main-content{
+    margin-top: 1.5vh !important;
+    text-align: center !important;
+    line-height: 1em !important;
+    font-size: 3em !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+
+.heading-info{
+    margin-top: 2vh !important;
+    padding-left: 15vw !important;
+    padding-right: 15vw !important;
+    text-align: center !important;
+    line-height: 1.75em !important;
+    font-size: 1em !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    color: #dadada !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+
+.community-tags{
+    margin-top: 5.5vh !important;
+    margin-bottom: 28vh !important;
+}
+
+
+.About-Button{
+    padding: 1.2vmin !important;
+    padding-left: 1.4vw !important;
+    padding-right: 1.4vw !important;
+    border-radius: 20vw !important;
+    text-align: center !important;
+    line-height: 1.15em !important;
+    font-size: 1.2em !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    color: #a3c962 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color: #ffffff !important;
+}
+
+
+.Join-Button{
+    padding: 1.2vmin !important;
+    padding-left: 1.4vw !important;
+    padding-right: 1.4vw !important;
+    border-radius: 20vw !important;
+    text-align: center !important;
+    line-height: 1.15em !important;
+    font-size: 1.2em !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    color: #ffffff !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color: #a3c962 !important;
+}
+
+
+.content-body-A{
+    padding-top: 3.9vh !important;
+    text-align: center !important;
+    line-height: 4vh !important;
+    font-size: 1em !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    color: #676662 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+
+.content-body-B{
+    line-height: 4vh !important;
+    font-size: 1em !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    color: #676662 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+
+.content-2{
+    margin-top: 9.6vh !important;
+    margin-bottom: 10vh !important;
+    justify-content: space-evenly !important;
+}
+
+
+.img-container-I{
+    width: 50vh !important;
+    height: 67vh !important;
+    margin-bottom: 2.9vh !important;
+}
+
+
+.img-in-hands{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.content-2-body{
+    /* padding-left: 3vw !important;
+    padding-right: 3vw !important; *
+    NOT NECESSARY AS GIVEN MS AND ME WHEN DEFINING CLASS*/
+    margin-bottom: 10vh !important;
+}
+
+
+.warning-tags{
+    margin-right: 13vw !important;
+    line-height: 1.4em !important;
+    font-size: 1.47em !important;
+    font-style: normal !important;
+    font-weight: 200 !important;
+    color: #000000 !important;
+    font-family: 'Times New Roman', Times, serif !important; 
+}

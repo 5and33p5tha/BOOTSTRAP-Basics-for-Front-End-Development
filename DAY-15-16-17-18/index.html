@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Front Page</title>
+
+
+    <link rel="stylesheet" href="../DAY-15-16-17/CSS/style.css">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+
+
+</head>
+
+<body>
+
+
+    <!-- <div class="container d-flex">  As we use column, flex-wrap : wrap sometimes creates problem as we are defining how many columns to take whick overwrites it, so we use div class=row-->
+
+    <div class="row  bg-danger custom-navbar py-2">
+
+        <!-- div= Row Already Has Flex Wrap So Better to Use Row So That Contents Go Down Automatically -->
+
+
+        <div class="col"> <a class="navbar-brand text-info" href="../DAY-15-16-17/index.html">My Page</a> </div>
+
+
+        <div class="col-md-8">
+            <!-- md for medium Screen i.e from Tablets to Laptops-->
+
+            <form class="d-flex">
+                <!-- d-flex means display flex-->
+
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <!-- me: margin end, py : padding in y axix i.e both top and bottom-->
+
+                <button class="btn btn-success text-" type="submit">Search</button>
+
+            </form>
+
+        </div>
+
+        <div class="col d-flex justify-content-evenly">
+
+            <a href="../DAY-15-16-17/signup.html"> <i class="bi bi-people-fill text-white fs-2"></i> </a>
+            <!--Sign Up     text-white to change the icon color, fs is font size 1 is the largest and 5 is the smallest-->
+
+            <a href="../DAY-15-16-17/login.html"> <i class="bi bi-person-lines-fill text-white fs-2"></i> </a>
+            <!--Login-->
+
+            <a href="../DAY-15-16-17/cart.html"> <i class="bi bi-cart4 text-white fs-2"></i> </a>
+            <!--Cart-->
+
+
+        </div>
+
+
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../DAY-15-16-17/index.html">Home</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../DAY-15-16-17/deals.html">Deals</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../DAY-15-16-17/customer-service.html">Customer Service</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Main Content Starts-->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Casousel Starts-->
+
+    <div class="container mx-auto">
+        <!-- WE USE THIS AS THIS IS THE STANDARD PRACTICE-->
+
+
+        <!-- 
+            CAN ALSO USE <div class="CONTAINER-FLUID"> OR <div class="ROW"> -->
+
+
+
+        <!-- 
+            HERE, DIV CLASS=ROW IS NOT USED AS THIS IS ON A SINGLE DIV, ROW IS ONLY USED FOR MULTIPLE DIVS THAT ARE TO BE DISPLAYED IN A LINE LIKE FOR GRID LAYOUT
+
+            ROW IS ALSO USED AS AN ALTERNATIVE TO CSS DISPLAY: FLEX; -->
+
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+
+            </div>
+
+            <div class="carousel-inner w-75 mx-auto">
+
+
+                <!-- IN BOOTSTRAP, W- OR H- ONLY TAKES VALUE OF 0, 25,50,75 OR 100. ALL VALUES BESIDES THESE NEEDS TO BE DEFINED IN A SEPARATE CSS BY MARKING IMPORTANT IF NECESSARY -->
+
+
+                <div class="carousel-item w-100 h-100 active">
+
+                    <img src="https://i.gadgets360cdn.com/large/image_1_1582035622506.png" class="d-block w-100 h-100"
+                        alt="Microsoft Surface Book 2">
+
+                </div>
+
+                <div class="carousel-item w-100 h-100 ">
+
+                    <img src="https://i5.walmartimages.com/asr/0ca753fe-a04e-4199-8b2c-47899ab9c380.f20ccf6ac27298a291b6bc85f62fe9f9.jpeg"
+                        class="d-block w-100 h-100" alt="Dell XPS 13 2-in-1">
+
+                </div>
+
+                <div class="carousel-item w-100 h-100">
+
+                    <img src="https://i.gadgets360cdn.com/large/macbook_pro_2021_14_16_inch_image_apple_1635229812600.jpg?downsize=950:*"
+                        class="d-block w-100 h-100" alt="Apple MacBook Pro 16">
+
+
+
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                <span class="visually-hidden">Previous</span>
+
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                <span class="visually-hidden">Next</span>
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+    <!-- Carousel Ends-->
+
+
+
+
+
+
+
+
+
+
+    <!-- Grid-Cards Starts Here-->
+
+    <div class="container-fluid mt-5">
+        <!--MT-5 is neither 5% or 5-Pixel, It is actually 5 times a Spacer, which is a special value in bootstrap Here  mx-auto is Not Necessary-->
+
+
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+
+
+            <!--HERE, ROW-COLS-1 PUTS ONLY ONE CARD IN SMALL SCREEN AND MD-4 PUTS FOUR COLUMNS IN A ROW FOR MEDIUM SCREEN OR LARGER. THE LARGER IS AUTOMATICALLY DEFINED-->
+            <!-- THIS IS A UNIQUE FEATURE OF BOOTSTRAP AS EACH BREAKPOINT IS DEFINED -->
+
+
+
+            <div class="col">
+                <!-- HERE, THIS COL IS LIKE A CONTAINER-->
+
+                <div class="card shadow-lg">
+
+                    <div class="image-container">
+
+
+                        <!--the values are defined for image in here as even when zoomed, the image will not overflow outside the container-->
+                        <!-- IT IS A GOOD PRACTICE TO USE IMAGE CONTAINER FOR IMAGES -->
+
+
+
+                        <img src="https://static.toiimg.com/thumb/msid-83628308,width-1200,height-900,resizemode-4/.jpg"
+                            class="card-img-top" alt="Galaxy Fold 3">
+
+
+                        <!-- THE ALT DISPLAYS IMAGE NAME WHEN IMAGE DOES NOT LOAD, IN ABOVE CASE, IF IMAGE DOES NOT LOAD, GALAXY FOLD 2 IS DISPLAYED-->
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center">Card title</h5>
+
+
+                        <center>
+
+                            <button class="btn btn-info my-2 form-control"> View Details</button>
+
+                        </center>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="card shadow-lg">
+
+                    <!--  OTHER VARIATIONS ARE:- 
+                                <div class="card shadow-lg rounded-3">
+                                
+                                <div class="card shadow-lg rounded-circle">
+                                
+                                <div class="card shadow-lg rounded-pill"> -->
+
+
+                    <div class="image-container">
+
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6419/6419335cv11d.jpg"
+                            class="card-img-top" alt="Microsoft Surface Duo">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center">Card title</h5>
+
+
+                        <!-- <center> -->
+
+                        <button class="btn btn-info my-2 form-control"> View Details</button>
+
+                        <!-- Form Control so that the button takes full width as full width is taken, the center tag is not necessary-->
+
+                        <!-- </center> -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="card shadow-lg">
+
+                    <div class="image-container">
+
+                        <img src="https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipad-pro-spring21_magic-keyboard-side-white_04202021_big_carousel.jpg.large.jpg"
+                            class="card-img-top" alt="iPad Pro M1">
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center">Card title</h5>
+
+
+                        <center>
+
+                            <button class="btn btn-info my-2 form-control"> View Details</button>
+
+                        </center>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col">
+
+                <div class="card shadow-lg">
+
+                    <div class="image-container">
+
+                        <img src="https://www.proandroid.com/wp-content/uploads/2020/02/huawei-mate-xs-oficial.png"
+                            class="card-img-top" alt="Huawei Mate X2">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center">Card title</h5>
+
+
+                        <!-- <center> -->
+
+                        <button class="btn btn-info my-2 form-control"> View Details</button>
+
+                        <!-- Form Control so that the button takes full width as full width is taken, the center tag is not necessary-->
+
+                        <!-- </center> -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col">
+
+                <div class="card shadow-lg">
+
+                    <div class="image-container">
+
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-13-pro-gallery-2?wid=2824&hei=2400&fmt=jpeg&qlt=80&.v=1631658250000"
+                            class="card-img-top" alt="iPhone 13 Pro Max">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center">Card title</h5>
+
+
+                        <!-- <center> -->
+
+                        <button class="btn btn-info my-2 form-control"> View Details</button>
+
+                        <!-- Form Control so that the button takes full width as full width is taken, the center tag is not necessary-->
+
+                        <!-- </center> -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col">
+
+                <div class="card shadow-lg">
+
+                    <div class="image-container">
+
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-13-pro-gallery-2?wid=2824&hei=2400&fmt=jpeg&qlt=80&.v=1631658250000"
+                            class="card-img-top" alt="iPhone 13 Pro Max">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center">Card title</h5>
+
+
+                        <!-- <center> -->
+
+                        <button class="btn btn-info my-2 form-control"> View Details</button>
+
+                        <!-- Form Control so that the button takes full width as full width is taken, the center tag is not necessary-->
+
+                        <!-- </center> -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col">
+
+                <div class="card shadow-lg">
+
+                    <div class="image-container">
+
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6419/6419335cv11d.jpg"
+                            class="card-img-top" alt="...">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center">Card title</h5>
+
+
+                        <!-- <center> -->
+
+                        <button class="btn btn-info my-2 form-control"> View Details</button>
+
+                        <!-- Form Control so that the button takes full width as full width is taken, the center tag is not necessary-->
+
+                        <!-- </center> -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="card shadow-lg">
+
+                    <div class="image-container">
+
+                        <img src="https://www.proandroid.com/wp-content/uploads/2020/02/huawei-mate-xs-oficial.png"
+                            class="card-img-top" alt="Huawei Mate X2">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center">Card title</h5>
+
+
+                        <center>
+
+                            <button class="btn btn-info my-2 form-control"> View Details</button>
+
+                        </center>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Grid-Cards Ends Here-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER STARTS HERE. COPY FOOTER FROM STEP 1. "https://getbootstrap.com/docs/5.1/examples/footers/"
+                                                      STEP 2. Remove <SVG> Note <SVG> icon is an image format, this is not supported in this site for some reason.
+                                                      STEP 3. REMOVE HYPERLINK i.e "<a> tag"-->
+
+
+    <div class="container">
+
+
+        <footer class="row row-cols-5 py-5 my-5 border-top">
+
+            <div class="col">
+
+
+
+                <p class="text-muted">&copy; 2021</p>
+
+            </div>
+
+
+            <div class="col">
+
+
+            </div>
+
+
+            <div class="col">
+
+                <h5>Section</h5>
+
+                <ul class="nav flex-column">
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="col">
+
+                <h5>Section</h5>
+
+                <ul class="nav flex-column">
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col">
+
+                <h5>Section</h5>
+
+                <ul class="nav flex-column">
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+
+                </ul>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+    <!-- BOOTSTRAP JAVASCRIPT WITH POPPER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
